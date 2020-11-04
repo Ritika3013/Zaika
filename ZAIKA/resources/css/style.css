@@ -1,5 +1,4 @@
-/*
-Orange color: #e67e22
+
 
 */
 
@@ -37,8 +36,6 @@ body {
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
-
-
 .row {
     max-width: 1140px;
     margin: 0 auto;
@@ -85,7 +82,7 @@ h3 {
 h2:after {
     display: block;
     height: 2px;
-    background-color: #e67e22;
+    background-color: #e26691;
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -109,7 +106,7 @@ h2:after {
 .icon-big {
     font-size: 350%;
     display: block;
-    color: #e67e22;
+    color: #e26691;
     margin-bottom: 10px;
 }
 
@@ -117,7 +114,7 @@ h2:after {
     display: inline-block;
     width: 30px;
     text-align: center;
-    color: #e67e22;
+    color: #e26691;
     font-size: 120%;
     margin-right: 10px;
     
@@ -131,10 +128,10 @@ h2:after {
 
 a:link,
 a:visited {
-    color: #e67e22;
+    color: #e26691;
     text-decoration: none;
     padding-bottom: 1px;
-    border-bottom: 1px solid #e67e22;
+    border-bottom: 1px solid #e26691;
     -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
@@ -161,33 +158,33 @@ input[type=submit] {
 .btn-full:link,
 .btn-full:visited,
 input[type=submit] {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
+    background-color: #e26691;
+    border: 1px solid #e26691;
     color: #fff;
     margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid #e67e22;
-    color: #e67e22;
+    border: 1px solid #e26691;
+    color: #e26691;
 }
 
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-    background-color: #cf6d17;
+    background-color: #ed1c64;
 }
 
 .btn-full:hover,
 .btn-full:active {
-    border: 1px solid #cf6d17;
+    border: 1px solid  #ed1c64;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1px solid #cf6d17;
+    border: 1px solid  #ed1c64;
     color: #fff;
 }
 
@@ -213,13 +210,17 @@ header {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    animation-name: moveInLeft;
+    animation-duration: 3sec;
 }
+    
 
 .logo {
     height: 100px;
     width: auto;
     float: left;
     margin-top: 30px;
+    animation: moveInLeft is ease-out;
 }
 
 .logo-black { 
@@ -256,7 +257,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #e67e22;
+    border-bottom: 2px solid  #ed1c64;
 }
 
 
@@ -313,40 +314,35 @@ header {
     padding: 0;
 }
 
-.meals-showcase {
-    list-style: none;
-    width: 100%;
+.harm{
+    color:black;
+    text-align: center;
+    margin-bottom:40px;
+    margin-top: 40px;
+    font-size: 40px;
 }
+.name{
+        font-size: 18px;
+    }
+.yar{
+        height:230px;
+    width:100%;
+    }
+.name{
+        font-size: 22px;
+        color:palevioletred;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    }
+.name:after{
+    display:block;
+    height: 2px;
+    background-color: hotpink;
+    content: " ";
+    width: 50px;
+    margin-top: 15px;
+    margin-bottom: 30px;
 
-.meals-showcase li {
-    display: block;
-    float: left;
-    width: 25%;
-}
-
-.meal-photo {
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
-    background-color: #000;
-}
-
-.meal-photo img {
-    opacity: 0.7;
-    width: 100%;
-    height: auto;
-    -webkit-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    transform: scale(1.15);
-    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s;
-}
-
-.meal-photo img:hover {
-    opacity: 1;
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transform: scale(1.03);
 }
 
 
@@ -388,11 +384,11 @@ header {
 }
 
 .works-step div {
-    color: #e67e22;
+    color:  #ed1c64;
     font-size: 150%;
     height: 54px;
     width: 54px;
-    border: 2px solid #e67e22;
+    border: 2px solid  #ed1c64;
     border-radius: 50%;
     display: inline-block;
     text-align: center;
@@ -425,6 +421,21 @@ header {
 
 .city-feature {
     margin-bottom: 5px;
+}
+.food_button {
+    font-size: .85em;
+    background-color: palevioletred;
+    display: block;
+    margin: .5em .5em .5em auto;
+}
+button {
+    background-color: palevioletred;
+    border: 0px;
+    border-color: pink;
+    color: white;
+    font-size: 30px;
+    padding: 1em 2em;
+    clip-path: polygon(0% 100%, 90% 100%, 100% 80%, 100% 0%, 10% 0%, 0% 20%);
 }
 
 
@@ -508,7 +519,7 @@ cite img {
     font-size: 300%;
     margin-bottom: 10px;
     font-weight: 100;
-    color: #e67e22;
+    color:  #ed1c64;
 }
 
 .plan-price span {
@@ -670,3 +681,13 @@ footer p {
 }
 
 
+
+.animation1 {
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! *//*
+Orange color:#e26691
+}
+
+.ion-ios-infinite-outline {
+    
+}
